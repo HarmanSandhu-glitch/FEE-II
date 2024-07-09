@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <form
+      action="submit
+    "
+      class="form"
+    >
+      <center><h1>APPLICATION FORM</h1></center>
+      <div class="email">
+        <input type="checkbox" checked />
+        Email : harmanjot0596.be23@chitkara.edu.in
+      </div>
+      <div
+        class="personInfo"
+        style="display: flex; flex-direction: column; width: fit-content"
+      >
+        <div>
+          <label for="firstName">First name : </label>
+          <input type="text" name="" id="firstName" />
+          <label for="lastName">Last name : </label>
+          <input type="text" name="" id="lastName" />
+        </div>
+        <div>
+          <label for="name">Father's Name : </label>
+          <input type="text" name="" id="name" />
+        </div>
+      </div>
+      <div>
+        Gender :
+        <input type="radio" name="gender" id="" checked /> Male
+        <input type="radio" name="gender" id="" /> Female
+        <input type="radio" name="gender" id="" /> Prefer Not to Say Addresss
+      </div>
+      <div class="addresses">
+        Address 1:<input type="text" name="address" id="" /><br />
+        Addresss 2:<input type="text" name="address" id="" /><br />
+        Addresss 3:<input type="text" name="address" id="" />
+      </div>
+      <div>
+        <label for="name">Phone number : </label>
+        <select name="" id="">
+          <option value="91" selected>+91</option>
+          <option value="92">+92</option>
+          <option value="92">+1</option>
+          <option value="93">+93</option>
+        </select>
+        <input type="number" name="" id="name" /><br />
+      </div>
+      <div>
+        <label for="country">Country : </label>
+        <select name="" id="country">
+          <option value="india" selected>India</option>
+          <option value="USA">USA</option>
+          <option value="Poland">Poland</option>
+        </select>
+      </div>
+      <div class="resume">
+        Upload Resume:
+        <input
+          type="file"
+          id="myImage"
+          name="myImage"
+          accept=".jpg, .png"
+          multiple
+        />
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 4px">
+        <label for="coverLetter">Cover Letter : </label>
+        <textarea name="" id="coverLetter"></textarea>
+        <button style="width: fit-content">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
