@@ -22,3 +22,6 @@ input {
 #l1 {
   text-decoration: line-through;
 }
+[placeholder="john.doe@gmail.com"]{
+  background-color: blue;
+}
