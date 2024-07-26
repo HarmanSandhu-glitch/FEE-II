@@ -1,0 +1,539 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: red;
+}
+header {
+  background-color: white;
+  display: flex;
+  min-height: 5vw;
+  justify-content: space-between;
+  padding-right: 5vw;
+}
+.logo_img {
+  padding-top: 2vh;
+  padding-left: 3vw;
+  padding-bottom: 1vh;
+  height: 12vh;
+  width: 13vw;
+}
+.navbar {
+  display: flex;
+  font-size: 1.75vw;
+  color: red;
+  position: relative;
+  top: 5vh;
+}
+
+ul li {
+  cursor: pointer;
+  display: inline;
+
+  margin: 1vw;
+}
+
+.student {
+  margin-top: 5vh;
+  margin-left: 10vw;
+  padding-bottom: 1vh;
+  background: white;
+  width: 80vw;
+  /* border-radius: vh; */
+  display: flex;
+}
+h1 {
+  padding-top: 5vh;
+  padding-bottom: 2vh;
+  color: white;
+  font-size: 2.75vw;
+  font-family: "Roboto Condensed", sans-serif;
+  text-decoration: underline;
+  text-align: center;
+}
+p.information {
+  /* margin-top: 5vh; */
+  padding-top: 5vh;
+  padding-bottom: 3vh;
+  padding-left: 30vw;
+  color: black;
+  font-size: 4vh;
+  font-weight: 1000;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.student .information .name {
+  /* background: red; */
+  padding-top: 2vh;
+  /* padding-bottom: 2vh; */
+  /* padding-left: 10vh; */
+  /* font-size: 2em; */
+  font: 1.5em sans-serif;
+}
+p.namep {
+  padding-left: 5vw;
+}
+input.firstname {
+  margin-top: 1vh;
+  text-align: center;
+  border-radius: 0;
+  height: 5vh;
+  width: 18vw;
+  margin-left: 4vw;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+}
+input.middlename {
+  margin-top: 3vh;
+  text-align: center;
+  border-radius: 0;
+  height: 5vh;
+  width: 18vw;
+  margin-left: 8vw;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+}
+input.lastname {
+  margin-top: 3vh;
+  text-align: center;
+  border-radius: 0;
+  height: 5vh;
+  width: 18vw;
+  margin-left: 7vw;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+}
+hr.line1 {
+  width: 50%;
+  margin-top: 3vw;
+}
+.details {
+  font: 1.5em sans-serif;
+  padding-top: 3vh;
+  margin-top: 3vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.student .information .details .dob {
+  text-align: center;
+  width: 26.66vw;
+}
+input.dob_input {
+  text-align: center;
+  font-size: 3vh;
+  height: 4.5vh;
+  width: 15vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+}
+.student .information .details .gender {
+  text-align: center;
+  width: 26.66vw;
+  /* justify-content: space-between; */
+}
+/* input.male
+{
+    margin-right: 0.5vw;
+}
+input.female
+{
+    margin-left: 1vw ;
+    margin-right: 0.5vw;
+} */
+p.pgender {
+  margin-bottom: 1vh;
+}
+select.genders {
+  padding-left: 1vw;
+  margin-top: 1vh;
+  text-align: left;
+  border-radius: 0;
+  height: 5vh;
+  width: 20vw;
+  margin-left: 0vw;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+}
+.student .information .details .mobile {
+  text-align: center;
+  width: 26.66vw;
+}
+input.mno {
+  text-align: center;
+  margin-top: 2vh;
+  height: 4.5vh;
+  width: 14vw;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #969a9d;
+}
+select.code {
+  height: 4.5vh;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #969a9d;
+}
+.student .information .detail2 {
+  margin: 2vh;
+  display: flex;
+  justify-content: space-between;
+  /* height: 10px;*/
+  /* background: red; */
+}
+.student .information .detail2 .email {
+  width: 27vw;
+  /* border: 2px solid blue; */
+  padding: 2vh;
+  padding-left: 0;
+  font: 1.5em sans-serif;
+}
+p.emailp {
+  padding-left: 2vw;
+}
+input.emaili {
+  padding-left: 1vw;
+  margin-top: 2vh;
+  text-align: left;
+  border-radius: 0;
+  height: 5vh;
+  width: 25vw;
+  margin-left: 1vw;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+}
+.student .information .detail2 .Nationality {
+  /* border: 2px solid red; */
+  width: 26.5vw;
+  /* padding: 2vh 0 0 0; */
+  padding-top: 2vh;
+  font: 1.5em sans-serif;
+  text-align: center;
+}
+select.categorys {
+  padding-left: 1vw;
+  margin-top: 2vh;
+  text-align: left;
+  border-radius: 0;
+  height: 5vh;
+  width: 20vw;
+  margin-left: 0vw;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+}
+.student .information .detail2 .category {
+  /* border: 2px solid green; */
+  width: 22vw;
+  /* padding: 2vh 0 0 0; */
+  padding-top: 2vh;
+  font: 1.5em sans-serif;
+  text-align: center;
+}
+select.nations {
+  padding-left: 1vw;
+  margin-top: 2vh;
+  text-align: left;
+  border-radius: 0;
+  height: 5vh;
+  width: 20vw;
+  margin-left: 0vw;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+}
+/* ---------------Address------------- */
+.Address {
+  margin-top: 15vh;
+  margin-left: 10vw;
+  margin-bottom: 2vh;
+  padding-bottom: 5vh;
+  background: white;
+  width: 80vw;
+  display: flex;
+}
+p.P_addressp {
+  /* margin-top: 5vh; */
+  padding-top: 5vh;
+  padding-bottom: 3vh;
+  padding-left: 30vw;
+  color: black;
+  font-size: 4vh;
+  font-weight: 1000;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.Address .Add1 {
+  /* display: flex;*/
+  font: 1.4em sans-serif;
+  /* padding-top: 3vh; */
+  margin-top: 3vh;
+  display: flex;
+  justify-content: space-between;
+}
+.Address .Add1 .house {
+  text-align: center;
+  width: 26.66vw;
+}
+input.housei {
+  padding-left: 1vw;
+  text-align: left;
+  margin-top: 2vh;
+
+  height: 4.5vh;
+  width: 16vw;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #969a9d;
+}
+.Address .Add1 .street {
+  text-align: center;
+  width: 26.66vw;
+}
+input.streeti {
+  padding-left: 1vw;
+  text-align: left;
+  margin-top: 2vh;
+  height: 4.5vh;
+  width: 16vw;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #969a9d;
+}
+.Address .Add1 .society {
+  text-align: center;
+  width: 26.66vw;
+}
+input.societyi {
+  padding-left: 1vw;
+  text-align: left;
+  margin-top: 2vh;
+  height: 4.5vh;
+  width: 16vw;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #969a9d;
+}
+.Address .Add2 {
+  /* display: flex;*/
+  font: 1.4em sans-serif;
+  /* padding-top: 3vh; */
+  margin-top: 3vh;
+  display: flex;
+  justify-content: space-between;
+}
+.Address .Add2 .city {
+  text-align: center;
+  width: 26.66vw;
+}
+input.cityi {
+  padding-left: 1vw;
+  text-align: left;
+  margin-top: 2vh;
+
+  height: 4.5vh;
+  width: 16vw;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #969a9d;
+}
+.Address .Add2 .district {
+  text-align: center;
+  width: 26.66vw;
+}
+input.Disti {
+  padding-left: 1vw;
+  text-align: left;
+  margin-top: 2vh;
+  height: 4.5vh;
+  width: 16vw;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #969a9d;
+}
+.Address .Add2 .state {
+  text-align: center;
+  width: 26.66vw;
+}
+input.statei {
+  padding-left: 1vw;
+  text-align: left;
+  margin-top: 2vh;
+  height: 4.5vh;
+  width: 16vw;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #969a9d;
+}
+.Address .Add3 {
+  /* display: flex;*/
+  font: 1.4em sans-serif;
+  /* padding-top: 3vh; */
+  margin-top: 4vh;
+  display: flex;
+  justify-content: space-between;
+}
+.Address .Add3 .country {
+  text-align: center;
+  width: 26.66vw;
+}
+input.countryi {
+  padding-left: 1vw;
+  text-align: left;
+  margin-top: 2vh;
+
+  height: 4.5vh;
+  width: 16vw;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #969a9d;
+}
+.Address .Add3 .pin {
+  text-align: center;
+  width: 26.66vw;
+}
+input.pini {
+  padding-left: 1vw;
+  text-align: left;
+  margin-top: 2vh;
+  height: 4.5vh;
+  width: 16vw;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #969a9d;
+}
+.Address .Add3 .PO {
+  text-align: center;
+  width: 26.66vw;
+}
+input.POi {
+  padding-left: 1vw;
+  text-align: left;
+  margin-top: 2vh;
+  height: 4.5vh;
+  width: 16vw;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #969a9d;
+}
+/* =======submit======= */
+.sumbit {
+  /* border: 2px solid black; */
+  margin-top: 7vh;
+  text-align: center;
+}
+/* input.confirmi
+{
+    box-sizing: 10px;
+} */
+p.confirmp {
+  font-size: 4vh;
+}
+button.submitb {
+  border: 2px solid black;
+  color: black;
+  font-size: 3.5vh;
+  background: white;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  width: 15vw;
+  height: 6vh;
+}
+/* ------Parents details------ */
+.Parent_Details {
+  margin-top: 15vh;
+  margin-left: 10vw;
+  margin-bottom: 2vh;
+  padding-bottom: 5vh;
+  background: white;
+  width: 80vw;
+}
+p.detailsp {
+  padding-top: 5vh;
+  padding-bottom: 3vh;
+  padding-left: 30vw;
+  color: black;
+  font-size: 4vh;
+  font-weight: 1000;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.Parent_Details .Father {
+  padding-top: 2vh;
+  font: 1.5em sans-serif;
+}
+p.fatherp {
+  margin-top: 2vh;
+  padding-left: 5vw;
+}
+/* .Parent_Details .Father .fatheri
+{
+    justify-content: space-between;
+    align-items: space-between;
+} */
+input.namef {
+  padding-left: 2vw;
+  margin-top: 1vh;
+  text-align: left;
+  border-radius: 0;
+  height: 5vh;
+  width: 18vw;
+  margin-left: 4vw;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+}
+input.emailf {
+  padding-left: 2vw;
+  margin-top: 3vh;
+  text-align: left;
+  border-radius: 0;
+  height: 5vh;
+  width: 25vw;
+  margin-left: 3vw;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+
+  background-color: #fff;
+  border: 1px solid #ced4da;
+}
+select.selectf {
+  margin-top: 3vh;
+  text-align: center;
+  border-radius: 0;
+  height: 5vh;
+  width: 18vw;
+  margin-left: 4vw;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+
+  border: 1px solid #ced4da;
+}
