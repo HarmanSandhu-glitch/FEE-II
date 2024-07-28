@@ -3,202 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chitkara University</title>
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <title>Chitkara University Admission Form</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      "
+    >
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-hapuUdABDDt3Q0bPc6KTE1ZvFVuQigmv6Q&s"
+        alt=""
+        style="width: 70px; border-radius: 12px"
+      />
+      <h1>Chitkara University Admission Form</h1>
+    </header>
     <main>
-      <h1 class="form">Admission Form</h1>
-      <div class="student">
-        <div class="information">
-          <p class="information">Student's Information</p>
-          <div class="name">
-            <p class="namep">Student name :</p>
-
-            <div class="name_input">
-              <input type="text" placeholder="First name" class="firstname" />
-              <input
-                type="text"
-                placeholder="Middle name(optional)"
-                class="middlename"
-              />
-              <input type="text" placeholder="Last name" class="lastname" />
-            </div>
+      <form id="admission-form">
+        <section>
+          <h2>Personal Details</h2>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              width: 100%;
+              gap: 15px;
+              align-items: center;
+              justify-content: space-between;
+            "
+          >
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
           </div>
-          <div class="details">
-            <div class="dob">
-              <p>Date of birth</p>
-              <input type="date" class="dob_input" />
-            </div>
-            <div class="gender">
-              <p class="pgender">Gender</p>
-              <select name="genders" id="" class="genders">
-                <option value="Select">Select---</option>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-            <div class="mobile">
-              <p>Mobile No.</p>
-              <select name="code" id="" class="code">
-                <option value="+91">+91</option>
-                <option value="+1">+1</option>
-                <option value="+23">+23</option>
-                <option value="+19">+19</option>
-                <option value="+10">+10</option>
-              </select>
-              <input type="number" class="mno" placeholder="eg. 9534343535" />
-            </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              width: 100%;
+              gap: 15px;
+              align-items: center;
+              justify-content: space-between;
+            "
+          >
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
           </div>
-          <div class="detail2">
-            <div class="email">
-              <p class="emailp">Email :</p>
-              <input
-                type="text"
-                class="emaili"
-                placeholder="eg. mitanshuxxxx@chitkara.edu.in"
-              />
-            </div>
-            <div class="Nationality">
-              <p class="Nationp">Course</p>
-              <select name="Nationality" id="" class="nations">
-                <option value="Select">Select---</option>
-                <option value="B.E. cse">B.E. CSE</option>
-                <option value="B.com">B.com</option>
-                <option value="B.A.">B.A.</option>
-                <option value="M.E. CSE">M.E. CSE</option>
-                <option value="Mechanical">Mechanical</option>
-              </select>
-            </div>
-            <div class="category">
-              <p class="categoryp">Category</p>
-              <select name="category" id="" class="categorys">
-                <option value="Select">Select---</option>
-                <option value="Genral">General</option>
-                <option value="gen-ews">Gen-EWS</option>
-                <option value="OBC">OBC</option>
-                <option value="Sc">SC</option>
-                <option value="ST">ST</option>
-              </select>
-            </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              width: 100%;
+              gap: 15px;
+              align-items: center;
+              justify-content: space-between;
+            "
+          >
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required />
           </div>
-        </div>
-      </div>
-      <div class="Address">
-        <div class="P_address">
-          <p class="P_addressp">Permanent Address</p>
-          <hr width="99.9%" />
-          <div class="Add1">
-            <div class="house">
-              <p class="housep">House/flat no. :</p>
-              <input
-                type="text"
-                class="housei"
-                placeholder="eg. House no. 23 "
-              />
-            </div>
-            <div class="street">
-              <p class="streetp">Street/Floor no. :</p>
-              <input
-                type="text"
-                class="streeti"
-                placeholder="eg. Street No. 13/1"
-              />
-            </div>
-            <div class="society">
-              <p class="societyp">Society :</p>
-              <input
-                type="text"
-                class="societyi"
-                placeholder="eg. Society/Building Name"
-              />
-            </div>
-          </div>
-          <div class="Add2">
-            <div class="city">
-              <p class="cityp">City/Town :</p>
-              <input type="text" class="cityi" placeholder="eg. Raman" />
-            </div>
-            <div class="district">
-              <p class="distp">Dist. :</p>
-              <input type="text" class="Disti" placeholder="Bathinda" />
-            </div>
-            <div class="state">
-              <p class="statep">State :</p>
-              <input type="text" class="statei" placeholder="eg. Punjab" />
-            </div>
-          </div>
-          <div class="Add3">
-            <div class="country">
-              <p class="countryp">Country :</p>
-              <input type="text" class="countryi" placeholder="eg. India" />
-            </div>
-            <div class="pin">
-              <p class="pinp">Pincode :</p>
-              <input type="text" class="pini" placeholder="151301" />
-            </div>
-            <div class="PO">
-              <p class="POp">Near Postoffice :</p>
-              <input type="text" class="POi" placeholder="eg. Raman P.O." />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="Parent_Details">
-        <p class="detailsp">Parents/Guardian Details</p>
-        <div class="Father">
-          <p class="fatherp">Father's Details :</p>
-          <div class="fatheri">
-            <input type="text" class="namef" placeholder="NAME :" />
-            <input type="email" class="emailf" placeholder="Email :" />
-            <select name="occu" id="" class="selectf">
-              <option value="select">Select Occupation</option>
-              <option value="Bussiness">Bussiness</option>
-              <option value="Engineer">Engineer</option>
-              <option value="Doctor">Doctor</option>
-              <option value="job">Job</option>
-            </select>
-          </div>
-          <p class="fatherp">Mother's Details :</p>
-          <div class="fatheri">
-            <input type="text" class="namef" placeholder="NAME :" />
-            <input type="email" class="emailf" placeholder="Email :" />
-            <select name="occu" id="" class="selectf">
-              <option value="select">Select Occupation</option>
-              <option value="Housewife">Housewife</option>
-              <option value="Bussiness">Bussiness</option>
-              <option value="Engineer">Engineer</option>
-              <option value="Doctor">Doctor</option>
-              <option value="job">Job</option>
-            </select>
-          </div>
-          <p class="fatherp">Gaurdian's Details :</p>
-          <div class="fatheri">
-            <input type="text" class="namef" placeholder="NAME :" />
-            <input type="email" class="emailf" placeholder="Email :" />
-            <select name="occu" id="" class="selectf">
-              <option value="select">Select Occupation</option>
-              <!-- <option value="Housewife">Housewife</option> -->
-              <option value="Bussiness">Bussiness</option>
-              <option value="Engineer">Engineer</option>
-              <option value="Doctor">Doctor</option>
-              <option value="job">Job</option>
-            </select>
-          </div>
-        </div>
-      </div>
-
-      <div class="sumbit">
-        <button class="submitb">Submit</button>
-      </div>
+        </section>
+        <section>
+          <h2>Academic Details</h2>
+          <label for="course">Course:</label>
+          <select id="course" name="course" required>
+            <option value="B.Tech" selected>B.Tech</option>
+            <option value="M.Tech">M.Tech</option>
+            <option value="MBA">MBA</option>
+            <option value="MCA">MCA</option>
+          </select>
+          <label for="percentage">Marks Percentage in XII:</label>
+          <input type="number" id="percentage" name="percentage" required />
+        </section>
+        <section>
+          <h2>Address</h2>
+          <label for="address">Address:</label>
+          <textarea id="address" name="address" required></textarea>
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" required />
+          <label for="state">State:</label>
+          <input type="text" id="state" name="state" required />
+          <label for="pincode">Pincode:</label>
+          <input type="number" id="pincode" name="pincode" required />
+        </section>
+        <button type="submit">Submit</button>
+      </form>
     </main>
   </body>
 </html>
